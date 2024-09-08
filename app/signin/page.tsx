@@ -13,7 +13,7 @@ export default function Signin(){
   const [active, setActive] = useState(2)
 
   return(
-    <div className="h-full w-full bg-white flex flex-row-reverse">
+    <div className="min-h-[inherit] w-full bg-white flex flex-row-reverse">
       <div className='flex-[2]'>
         <div className='p-[20px] pt-[36px] flex flex-row justify-between items-center mb-[50px] lg:mb-[70px] md:justify-end'>
           <div className='border-[1px] border-secondary bg-white p-1 rounded-[10px] md:hidden'>
@@ -44,7 +44,7 @@ export default function Signin(){
           
         </div>
       </div>
-      <div className=" hidden md:flex h-full bg-primary flex-[1] max-w-[413px] flex-col">
+      <div className=" hidden md:flex bg-primary flex-[1] max-w-[413px] flex-col">
         <div className='p-[32px] mb-[80px]'>
           <Image src={logo} alt=''/>
         </div>

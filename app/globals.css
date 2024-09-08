@@ -20,9 +20,10 @@
 body {
   color: rgb(var(--foreground-rgb)); 
 }
-html{
-  height: 100%
+body {
+  min-height: 100vh;
 }
+
 ::-webkit-scrollbar-thumb{
   @apply bg-primary;
   border-radius: 10px;
