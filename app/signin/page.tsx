@@ -17,7 +17,7 @@ export default function Signin(){
       <div className='flex-[2]'>
         <div className='p-[20px] pt-[36px] flex flex-row justify-between items-center mb-[50px] lg:mb-[70px] md:justify-end'>
           <div className='border-[1px] border-secondary bg-white p-1 rounded-[10px] md:hidden'>
-            <Image src={logo} />
+            <Image src={logo} alt=''/>
           </div>
           
           <a href="" className='text-primary  font-primary-sb text-[15px]'>{_Message.print("Pedir Informação")}</a>
@@ -39,7 +39,7 @@ export default function Signin(){
       </div>
       <div className=" hidden md:flex h-full bg-primary flex-[1] max-w-[413px] flex-col">
         <div className='p-[32px] mb-[80px]'>
-          <Image src={logo}/>
+          <Image src={logo} alt=''/>
         </div>
         <div className='pr-[46px] p-[32px] pb-[20px]'>
           <ShortTitle title={_Message.print("Lorem ipsum dolor sit amet consectetur. ")} body={_Message.print("Lorem ipsum dolor sit amet consectetur. Sed maecenas sed.")} color1="text-white" color2='text-white'/>
