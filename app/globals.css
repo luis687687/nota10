@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: user) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -17,17 +18,34 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb)); 
+}
+html{
+  height: 100%
+}
+::-webkit-scrollbar-thumb{
+  @apply bg-primary;
+  border-radius: 10px;
+}
+::-webkit-scrollbar{
+  @apply bg-transparent;
+  width: 6px;
+ 
 }
 
 @layer utilities {
   .text-balance {
-    text-wrap: balance;
+    @apply w-[200px]
   }
+}
+
+
+/**** ddddddddd **/
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url("../_fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("../_fonts/Poppins-Regular.ttf");
 }
