@@ -23,15 +23,22 @@ export default function Signin(){
           <a href="" className='text-primary  font-primary-sb text-[15px]'>{_Message.print("Pedir Informação")}</a>
         </div>
         <div className='p-[20px] w-full sm:pl-[90px] md:pl-[40px] md:pr-0 lg:pl-[105px]'>
-          <ShortTitle title={_Message.print("Selecionar utilizador")} body={_Message.print("Lorem ipsum dolor sit amet consectetur. Dictum semper dignissim adipiscing leo sem diam.")}/>
+        <ShortTitle
+           title={_Message.print("Selecionar utilizador")}
+           body={_Message.print("Lorem ipsum dolor sit amet consectetur. Dictum semper dignissim adipiscing leo sem diam.")}/>
           <div className='pt-[58px] flex flex-col gap-[32px] '>
             <GuideButton 
-              onIn = { _  => setActive(1)}
-              onOut = { _ => setActive(2)}
+              onIn = { (_:any)  => setActive(1)}
+              onOut = { (_:any) => setActive(2)}
               active = {active == 1}
-              Icon={IconUserSignin} righticon={true} title = {_Message.print("Encerramento")} body = {_Message.print("Acesso para encarregado")}/>
+              onClick={false}
+              Icon={IconUserSignin} title = {_Message.print("Encerramento")} body = {_Message.print("Acesso para encarregado")}/>
             <GuideButton
             active={active == 2}
+            onClick={false}
+            onIn={false}
+            onOut={false}
+            
             Icon={IconIterPrise}  title = {_Message.print("Instituição")} body = {_Message.print("Acesso para encarregado")}/>
           </div>
           

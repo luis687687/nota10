@@ -1,8 +1,8 @@
 "use client"
-export default function IlustrateSigin({color="white"} : {color: string}){
+export default function IlustrateSigin(){
 
   return(
-    <i className={color+""}>
+    <i className={""}>
       <svg width="100%" height="386" viewBox="0 0 413 386" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M370.315 339.513H342.097V339.726H370.315V339.513Z" fill="#EBEBEB"/>
 <path d="M269.199 341.831H261.796V342.044H269.199V341.831Z" fill="#EBEBEB"/>

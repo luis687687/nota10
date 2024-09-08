@@ -4,7 +4,6 @@ import IconArrowSign from '../../../assets/IconArrowSign';
 import IconUserSignin from "@/assets/IconUserSign";
 
 type PropsButton = {
-  righticon:true,
   Icon: any,
   onClick: any,
   active: any,
@@ -14,7 +13,7 @@ type PropsButton = {
   onOut: any
 }
 // import Image from "next/image"
-export default function GuideButton({active, onClick, righticon, Icon, title, body, onIn, onOut} : PropsButton){
+export default function GuideButton({active, onClick=false, Icon, title, body, onIn, onOut} : PropsButton){
   const back_image = active ? "bg-transparent" : "bg-secondary"
   const color_image = active ? "text-secondary" : "text-white"
   const border = active ? "border-secondary" : "border-transparent"
