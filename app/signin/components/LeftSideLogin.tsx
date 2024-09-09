@@ -8,31 +8,7 @@ import { useEffect, useState } from "react"
 const LefftSideLogin = () => {
   const [actived, setActive] = useState(0)
   const [conter, setConter] = useState(0)
-  useEffect( () => {
-    //here
-      const element: HTMLElement = document.getElementById("scrollator")
-      const child : HTMLElement = document.querySelector(".childs-scrollator")
-      if(element && child){
-        element.style.scrollBehavior = "smooth"
-        setTimeout( _=> {
-          if (conter == 2)
-          {
-            setConter(0)
-            element.style.scrollBehavior = "initial"
-            element.scroll(0,0)
-            element.style.scrollBehavior = "smooth"
-            
-          }
-          else{
-            setConter(conter+1)
-            element.scrollBy({left:child.offsetWidth+46})
-          }
-          console.log(conter)
-          
-        }, 1500)
-        
-      }
-  }, [conter])
+ 
   return(
           <div className="hidden md:flex bg-primary flex-[3] flex-col left-side-login">
           <div className='p-[32px] pb-[90px]'>
