@@ -3,6 +3,8 @@ import ShortTitle from "./ShortTitle";
 import Input from "./Input";
 import Button from "./Button";
 import IconArrowSign from "@/assets/IconArrowSign";
+import IconAvatarLogin from "@/assets/IconAvatarLogin";
+import IconLock from "@/assets/IconLock";
 
 const text_color : string = "text-[#263238]"
 export default function Login({onBack = ()=>{}}){
@@ -33,8 +35,8 @@ export default function Login({onBack = ()=>{}}){
                 body={_Message.print("Lorem ipsum dolor sit amet")}/>
           <div className="flex flex-col gap-[48px]">
             <div className="flex flex-col gap-[29px]">
-              <Input />
-              <Input />
+              <Input Icon={() => <IconAvatarLogin />}/>
+              <Input Icon={() => <IconLock />} place="Senha de usuário"/>
             </div>
             <Button />
           </div>
