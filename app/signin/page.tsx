@@ -14,7 +14,7 @@ import Login from './components/Login';
 import LefftSideLogin from './components/LeftSideLogin';
 
 export default function Signin(){
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState(false)
 
   return(
     <div className="min-h-[inherit] w-full bg-white flex flex-row-reverse">
