@@ -8,7 +8,7 @@ import IconUserSignin from "@/assets/IconUserSign";
 import IconIterPrise from "@/assets/IconInterPrise";
 import { useState } from "react";
 
-export default function({onClick = function(){}}){
+export default function RightChoice({onClick = function(){}}){
   const [active, setActive] = useState(2)
   return(
       <div className='flex-[2]'>
