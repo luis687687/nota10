@@ -20,11 +20,11 @@ export default function Signin(){
     <div className="min-h-[inherit] w-full bg-white flex flex-row-reverse">
       {
         login ? <>
-          <Login onBack = { (_:any) => setLogin(false)} />
+          <Login onBack = { () => setLogin(false)} />
           <LefftSideLogin />
         </> :
         <>
-          <RightChoice onClick = { (_:any) => setLogin(true)}/>
+          <RightChoice onClick = { () => setLogin(true)}/>
           <LefftSide />
         </>
         }
