@@ -13,7 +13,7 @@ type PropsButton = {
   onOut: any
 }
 // import Image from "next/image"
-export default function GuideButton({active, onClick=false, Icon, title, body, onIn, onOut} : PropsButton){
+export default function GuideButton({active, onClick=function(){}, Icon, title, body, onIn, onOut} : PropsButton){
   const back_image = active ? "bg-transparent" : "bg-secondary"
   const color_image = active ? "text-secondary" : "text-white"
   const border = active ? "border-secondary" : "border-transparent"
@@ -21,6 +21,7 @@ export default function GuideButton({active, onClick=false, Icon, title, body, o
     <div 
     onMouseOver={ () => onIn && onIn()}
     onMouseOut={ () => onOut && onOut()}
+    onClick={_ => onClick && onClick()}
     className={`
       group
       active:bg-secondary/40

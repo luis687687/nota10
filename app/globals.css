@@ -50,3 +50,31 @@ body {
   font-family: "Poppins-regular";
   src: url("../_fonts/Poppins-Regular.ttf");
 }
+
+
+.left-side-login{
+  animation: left_login 2s forwards;
+}
+.left-side-card-login{
+  animation: left_side_card_login 2s forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes left_login {
+  from{
+   max-width: 443px;
+  }
+  to{
+    max-width: 758px;
+  }
+}
+@keyframes left_side_card_login {
+  from{
+    
+    flex-direction: colum;
+  }
+  to{
+    flex-direction: row;
+  }
+}
