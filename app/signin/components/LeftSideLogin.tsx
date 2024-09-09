@@ -8,7 +8,7 @@ import { useEffect, useState } from "react"
 const LefftSideLogin = () => {
   const [actived, setActive] = useState(0)
   const [conter, setConter] = useState(0)
-  useEffect( e => {
+  useEffect( () => {
 
       const element: HTMLElement = document.getElementById("scrollator")
       const child : HTMLElement = document.querySelector(".childs-scrollator")
